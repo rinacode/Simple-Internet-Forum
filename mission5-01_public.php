@@ -33,7 +33,7 @@
             $comment=$_POST["commenta"];
             $pass=$_POST["passa"];
             $date = new DATETIME();
-            $date = $date -> format("Y/m/s, H:i:s");
+            $date = $date -> format("Y/m/d, H:i:s");
 
             if($name!=""&&$comment!=""&&empty($checknumber)){//空欄じゃない、かつ編集申請されてないとき。
             //sqlのテーブルにデータを書き込み
